@@ -60,10 +60,6 @@ This comprehensive training covers React and Next.js for beginners, structured i
 
 This training will take you from React basics to building full Next.js applications with modern features.
 
-<!--
-ยกตัวอย่าง ...
--->
-
 ---
 
 ## Table of contents 

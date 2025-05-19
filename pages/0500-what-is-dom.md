@@ -56,7 +56,7 @@ layout: two-cols-header
 
 The DOM is the **object** representation of the HTML:
 
-<img src="/assets/DOM-Tree1.webp" class="mt-5 w-3/2 h-100 mx-auto" />
+<img src="/assets/dom-tree.webp" class="mt-5 w-3/2 h-100 mx-auto" />
 
 ---
 
