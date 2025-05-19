@@ -68,7 +68,7 @@ In this workshop, we'll build a complete CRUD application for managing blog post
 
 Let's start by Dowload a new CRUD Next.js project from <br>
 
-LINK: 
+LINK: https://nextjs-basic-slidev.vercel.app/workshop-crud.zip
 
 ** Please make sure you already install node version 20+ 
 
