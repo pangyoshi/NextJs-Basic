@@ -24,9 +24,18 @@ SSR = สร้างหน้าเว็บ ตอนที่ผู้ใช�
 
 API routes คือการสร้าง Back-end API ง่าย ๆ ภายใน Next.js
 โดยไม่ต้องตั้ง Server แยกเอง
-
 -->
 
+---
+
+## 🛢️ Server-Side Rendering (SSR)
+
+Next.js can render React components on the server before sending to the client:
+
+<img src="/assets/single-page-app.webp" class="mt-5 w-[75%] mx-auto" />
+
+---
+hide: true
 ---
 
 ## 🛢️ Server-Side Rendering (SSR)
@@ -37,17 +46,25 @@ Next.js can render React components on the server before sending to the client:
 // app/page.jsx
 async function HomePage() {
   // Fetch data directly in the component (Server Component)
-  const res = await fetch('https://api.example.com/data')
-  const data = await res.json()
+  const res = await fetch("https://api.example.com/data");
+  const data = await res.json();
 
-  return <div>{data.title}</div>
+  return <div>{data.title}</div>;
 }
 
-export default HomePage
+export default HomePage;
 ```
 
 ---
 
+## 🧾 Static Site Generation (SSG)
+
+Pre-render pages at build time for better performance:
+<img src="/assets/static-site-generation.png" class="mt-5 w-[75%] mx-auto" />
+
+---
+hide: true
+---
 ## 🧾 Static Site Generation (SSG)
 
 Pre-render pages at build time for better performance:
@@ -56,21 +73,18 @@ Pre-render pages at build time for better performance:
 // app/blog/[slug]/page.jsx
 export async function generateStaticParams() {
   // Return a list of possible values for slug
-  return [
-    { slug: 'hello-world' },
-    { slug: 'learn-nextjs' }
-  ]
+  return [{ slug: "hello-world" }, { slug: "learn-nextjs" }];
 }
 
 async function BlogPost({ params }) {
   // Fetch data based on slug
-  const res = await fetch(`https://api.example.com/posts/${params.slug}`)
-  const post = await res.json()
+  const res = await fetch(`https://api.example.com/posts/${params.slug}`);
+  const post = await res.json();
 
-  return <div>{post.title}</div>
+  return <div>{post.title}</div>;
 }
 
-export default BlogPost
+export default BlogPost;
 ```
 
 ---
@@ -95,6 +109,7 @@ app/
 ```
 
 The App Router uses a convention where:
+
 - `page.jsx` defines a route
 - `layout.jsx` defines a shared layout
 - `loading.jsx` creates loading UI
@@ -110,41 +125,43 @@ Create API endpoints as Route Handlers:
 ```jsx
 // app/api/hello/route.js
 export async function GET() {
-  return Response.json({ name: 'John Doe' })
+  return Response.json({ name: "John Doe" });
 }
 
 export async function POST(request) {
-  const data = await request.json()
+  const data = await request.json();
   // Process the data
-  return Response.json({ received: data })
+  return Response.json({ received: data });
 }
 ```
 
 Access with:
+
 ```javascript
 // Client-side
-fetch('/api/hello')
-  .then(res => res.json())
-  .then(data => console.log(data))
+fetch("/api/hello")
+  .then((res) => res.json())
+  .then((data) => console.log(data));
 ```
 
 ---
 hide: true
 ---
+
 ## Built-in CSS Support
 
 Next.js supports various styling options:
 
 ```jsx {*}{maxHeight:'80%'}
 // CSS Modules
-import styles from './Button.module.css'
+import styles from "./Button.module.css";
 
 function Button() {
-  return <button className={styles.button}>Click me</button>
+  return <button className={styles.button}>Click me</button>;
 }
 
 // Global CSS
-import '../styles/globals.css'
+import "../styles/globals.css";
 
 // Styled JSX (CSS-in-JS)
 function Button() {
@@ -158,7 +175,7 @@ function Button() {
         }
       `}</style>
     </>
-  )
+  );
 }
 ```
 
@@ -169,7 +186,7 @@ function Button() {
 Next.js optimizes images automatically:
 
 ```jsx
-import Image from 'next/image'
+import Image from "next/image";
 
 function Avatar() {
   return (
@@ -180,11 +197,12 @@ function Avatar() {
       height={500}
       priority
     />
-  )
+  );
 }
 ```
 
 #### Benefits:
+
 - Automatic WebP/AVIF conversion
 - Responsive sizes
 - Lazy loading
@@ -193,6 +211,7 @@ function Avatar() {
 ---
 hide: true
 ---
+
 ## Development Experience
 
 Next.js provides an excellent developer experience:

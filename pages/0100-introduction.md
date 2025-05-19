@@ -50,6 +50,8 @@ level: 1
 
 A Single Page Application (SPA) is a web application that loads a single HTML page and dynamically updates the content as the user interacts with the app, without reloading the entire page.
 
+<img src="/assets/single-page-app.webp" class="mt-5 w-[75%] mx-auto" />
+
 ---
 layout: two-cols-header
 level: 2
