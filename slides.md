@@ -35,9 +35,9 @@ fonts:
   Press Space for next page <carbon:arrow-right />
 </div>
 
-<div class="abs-br m-6 text-xl">
+<!-- <div class="abs-br m-6 text-xl">
   Advance Innovation Technology
-</div>
+</div> -->
 
 
 ---
