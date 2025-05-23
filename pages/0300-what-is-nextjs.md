@@ -32,7 +32,7 @@ API routes คือการสร้าง Back-end API ง่าย ๆ ภ�
 
 Next.js can render React components on the server before sending to the client:
 
-<img src="/assets/single-page-app.webp" class="mt-5 w-[75%] mx-auto" />
+<img src="/assets/server-side-rendering.webp" class="mt-5 w-[75%] mx-auto" />
 
 ---
 hide: true

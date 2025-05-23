@@ -48,7 +48,7 @@ transition: fade-out
 
 This comprehensive training covers React and Next.js for beginners, structured into the following modules:
 
-- 📝 **Introduction** - Environment setup, modern web app concepts, JavaScript essentials
+- 📝 **Introduction** - Internet, modern web app concepts, JavaScript essentials
 - ⚛️ **React Fundamentals** - Components, props, state, JSX, Virtual DOM
 <!-- - 🔄 **Programming Paradigms** - Imperative vs. declarative programming approaches -->
 - 🌐 **DOM Concepts** - Understanding the Document Object Model

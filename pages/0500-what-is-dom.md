@@ -131,6 +131,6 @@ React uses a Virtual DOM to minimize direct DOM manipulation:
 1. **HTML**: The initial markup
 2. **DOM**: Browser's object representation
 3. **Virtual DOM**: React's lightweight copy of the DOM
-4. **Reconciliation**: React's process for updating the DOM efficiently
+4. **Efficient Updates**: finds the differences, and updates only the changed parts
 
 This approach makes React applications faster and more efficient.

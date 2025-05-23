@@ -180,8 +180,7 @@ export default ProductList;
 
 ---
 
-## React vs Next.js — At a Glance
-
+## React vs Next.js — Overall
 | React (Library) | Next.js (Framework) |
 |------------------|---------------------|
 | UI Components Only | Full-Stack Web Applications |
@@ -196,10 +195,8 @@ export default ProductList;
 
 | Choose React When | Choose Next.js When |
 |------------------|---------------------|
-| Building highly interactive single-page applications | Building production websites that need SEO |
-| Working within existing React applications | Need server-side rendering or static site generation |
-| Need complete control over application architecture | Want built-in routing, API routes, and image optimization |
-| Want specific routing or state management solutions | Need faster initial page loads |
-| Building libraries or components for various projects | Building full-stack applications with React |
-| Working with specialized build systems | Want zero-config development environment |
-| | Need to scale your application easily |
+| Building highly interactive purely client-side rendered apps (SPA)  | Building production websites that need SEO like SSR, SSG|
+| Requires additional libraries like React Router | Has built-in file-based routing. |
+| Requires manual setup with tools like Webpack, Babel. | Comes with zero-config setup for most use cases. |
+| Only for frontend. | Supports backend logic via API routes. |
+| Not SEO-friendly by default. | Better for SEO thanks to server-side and static rendering. |
