@@ -190,7 +190,13 @@ export default ProductList;
 | Manual setup (e.g., React Router) | Built-in File-based Routing |
 | No Built-in Solution | Built-in Methods (getServerSideProps, etc.) |
 | Needs Configuration (CRA, Webpack) | Zero Config Out of the Box |
-| Manual Setup Required | Optimized for Vercel, Works Anywhere |
+
+<!--
+ไม่มีฟีเจสในตัวสำหรับดึงข้อมูลจากเซิร์ฟเวอร์ต้องใช้ fetch()
+
+มีฟีเจอร์ให้พร้อม เช่น getServerSideProps, getStaticProps, และ API Routes
+-->
+
 ---
 
 ## When to Choose React vs Next.js?
