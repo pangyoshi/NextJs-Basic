@@ -40,12 +40,15 @@ background: https://cover.sli.dev
 layout: two-cols
 ---
 
-# Thitikon Khamluang
-**Front-End Developer**
+# Introduce
 
-# Nutthawat Witdumrong
+## Thitikon Khamluang
+**Front-End Developer** 🧑‍💻
 
-**Front-End Developer**
+
+## Nutthawat Witdumrong
+
+**Front-End Developer**  👨‍💻 
 
 <div class="text-center m-6 text-xl">
     Advance Innovation Technology
@@ -56,8 +59,6 @@ layout: two-cols
 <img src="/assets/qr-code.png" class="mt-5 w-52 mx-auto" />
 
 
----
-transition: fade-out
 ---
 
 # Next.js Training Overview
