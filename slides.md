@@ -35,9 +35,25 @@ fonts:
   Press Space for next page <carbon:arrow-right />
 </div>
 
-<!-- <div class="abs-br m-6 text-xl">
-  Advance Innovation Technology
-</div> -->
+---
+background: https://cover.sli.dev
+layout: two-cols
+---
+
+# Thitikon Khamluang
+**Front-End Developer**
+
+# Nutthawat Witdumrong
+
+**Front-End Developer**
+
+<div class="text-center m-6 text-xl">
+    Advance Innovation Technology
+</div> 
+
+::right::
+
+<img src="/assets/qr-code.png" class="mt-5 w-52 mx-auto" />
 
 
 ---

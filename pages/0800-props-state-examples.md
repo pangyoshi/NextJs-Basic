@@ -2,6 +2,9 @@
 
 Practical examples of using Props and State in React applications.
 
+<img src="/assets/react-props.jpg" class="mt-5 w-[80%] mx-auto" />
+
+
 ---
 
 ## Displaying Data with Props

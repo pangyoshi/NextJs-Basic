@@ -36,17 +36,19 @@ JSX:
 
 ---
 
-## Key Differences: Attributes
+##  🔑 Key Differences: Attributes
 
 | HTML | JSX |
 |------|-----|
 | `class` | `className` |
 | `for` | `htmlFor` |
 | `onclick` | `onClick` |
-| `tabindex` | `tabIndex` |
 | `style="color: red;"` | `style={{ color: 'red' }}` |
 
 JSX uses camelCase for attribute names (following JavaScript conventions).
+
+<img src="/assets/CamelCase.png" class="mt-5 w-[25%] mx-auto" />
+
 
 ---
 hide: true
@@ -168,6 +170,13 @@ In JSX, you need a single root element or use fragments:
   <p>Paragraph</p>
 </React.Fragment>
 ```
+
+<!--
+JSX ไม่อนุญาตให้มีหลาย root elements
+คิดง่ายๆ ว่า React ต้องให้เราห่อของทั้งหมดในกล่องเดียว (เหมือนใส่ของลงในกล่องพัสดุ)
+ถ้าเราไม่อยากใช้กล่องจริง (เช่น div) เราใช้กล่องล่องหน (React Fragment) แทน
+แบบนี้เราก็จัดของได้โดยไม่เพิ่มน้ำหนักหรือขนาดเกินจำเป็นครับ
+-->
 
 ---
 hide: true

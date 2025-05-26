@@ -2,6 +2,8 @@
 
 The Virtual DOM is a key concept that makes React efficient and performant.
 
+<img src="/assets/react-dom.jpg" class="mt-5 w-[80%] mx-auto" />
+
 ---
 
 ## What is the Virtual DOM?

@@ -25,8 +25,13 @@ function Greeting() {
   return <h1>Hello, World!</h1>;
 }
 
+// ใช้งานใน React:
+<Greeting />
+
 ```
-<!-- may remove Class Components -->
+
+React Component 👉 Returns JSX (HTML-like) for use in building web page UI.
+
 ---
 hideInToc: true
 ---
@@ -47,6 +52,11 @@ function App() {
   );
 }
 ```
+
+React Component 👉 Use 𝗣𝗮𝘀𝗰𝗮𝗹 𝗖𝗮𝘀𝗲 where each word in a variable name starts with a capital letter
+<!--
+Pascal case สำหรับ components
+-->
 
 ---
 

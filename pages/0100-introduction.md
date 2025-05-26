@@ -175,11 +175,16 @@ const evenNumbers = numbers.filter((num) => num % 2 === 0);
 const sum = numbers.reduce((total, num) => total + num, 0);
 // 15
 ```
-<!-- Object คือ กล่องที่เก็บข้อมูลหลายอย่าง ในรูปแบบ (key - value)
-ในที่นี้เหมือนแฟ้มข้อมูลของคนหนึ่งคน 
-.filter(): คัดเฉพาะตัวที่ "ผ่านเงื่อนไข"
+
+<!--
+Object คือ กล่องที่เก็บข้อมูลหลายอย่าง ในรูปแบบ (key - value)
+ในที่นี้เหมือนแฟ้มข้อมูลของคนหนึ่งคน
+.map(): เปลี่ยนค่าทุกตัวใน array 
+จะได้จำนวนผลลัพธ์เท่าเดิม =>	Array ใหม่
+.filter(): คัดเฉพาะตัวที่ "ผ่านเงื่อนไข" => Array ใหม่ที่สั้นลง
 .reduce(): “รวมค่าทุกตัวใน array ให้เหลือแค่ค่าเดียว”
 -->
+
 ---
 hideInToc: true
 ---
@@ -202,6 +207,8 @@ const [primary, secondary] = colors;
 
 ```javascript
 const name = "John";
+console.log("Hello, " + name + "!");
+
 const greeting = `Hello, ${name}!`;
 // "Hello, John!"
 
@@ -211,7 +218,15 @@ const multiline = `
   string
 `;
 ```
-<!-- Destructuring คือวิธี “แยกค่าจาก Object หรือ Array แล้วเก็บไว้ในตัวแปรได้ง่ายขึ้น” -->
+
+<!--
+Destructuring คือวิธี “แยกค่าจาก Object หรือ Array แล้วเก็บไว้ในตัวแปรได้ง่ายขึ้น”
+
+“ปกติเวลาที่เราต้องการเชื่อมข้อความกับตัวแปรใน JavaScript แบบง่ายๆ เรามักจะใช้ + ในการต่อข้อความ เช่น…”
+
+“Template Literals ทำให้เราเขียนข้อความที่มีตัวแปรแทรกอยู่ โดยใช้เครื่องหมาย backtick ` แทน double quote และใช้ ${} เพื่อใส่ตัวแปรข้างในได้เลย”
+-->
+
 ---
 hideInToc: true
 class: py-5

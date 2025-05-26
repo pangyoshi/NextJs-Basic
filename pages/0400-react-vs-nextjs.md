@@ -2,6 +2,8 @@
 
 Key differences and when to use each framework
 
+<img src="/assets/vs.webp" class="mt-5 w-[100%] mx-auto" />
+
 ---
 hide: true
 ---

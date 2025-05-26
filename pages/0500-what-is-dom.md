@@ -1,6 +1,11 @@
 # What is the DOM?
 
-The Document Object Model (DOM) is a programming interface for web documents.
+The Document Object Model (DOM) is a programming interface for web documents.That's represents an HTML document as a tree structure:
+
+<img src="/assets/dom.png" class="mt-5 w-[50%] mx-auto" />
+<!--
+browser จะแปลง webpage หรือ web document ของเราเป็น โครงสร้างของเอกสาร เพื่อให้เราจัดการหรือเปลี่ยนแปลงได้ด้วย ภาษา Js
+-->
 
 ---
 

@@ -2,8 +2,11 @@
 
 Next.js is a React framework that provides structure, features, and optimizations for your application.
 
----
+<img src="/assets/nextjs.png" class="mt-5 w-[50%] mx-auto" />
 
+---
+layout: two-cols
+---
 ## ⏩ Why Next.js?
 
 Next.js extends React with:
@@ -16,6 +19,9 @@ Next.js extends React with:
 - **Code splitting and bundling**
 - **Image optimization**
 - **Development environment with Fast Refresh**
+
+::right::
+<img src="/assets/why-nextjs.png" class="mt-5 w-[100%] mx-auto" />
 
 <!--
 SSG = สร้างไว้ล่วงหน้าตอน Build → โหลดเร็ว ใช้กับข้อมูลคงที่ เช่น ข้อมูลติดต่อเรา, เกี่ยวกับริษัทเรา, ที่อยู่
@@ -32,7 +38,7 @@ API routes คือการสร้าง Back-end API ง่าย ๆ ภ�
 
 Next.js can render React components on the server before sending to the client:
 
-<img src="/assets/server-side-rendering.webp" class="mt-5 w-[75%] mx-auto" />
+<img src="/assets/single-page-app.webp" class="mt-5 w-[75%] mx-auto" />
 
 ---
 hide: true
