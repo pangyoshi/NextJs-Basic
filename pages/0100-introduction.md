@@ -52,6 +52,11 @@ A Single Page Application (SPA) is a web application that loads a single HTML pa
 
 <img src="/assets/single-page-app.webp" class="mt-5 w-[75%] mx-auto" />
 
+<!--
+เวลาเราเข้าเว็บไซต์ทั่วไปแบบเก่า เราคลิกลิงก์แต่ละครั้ง หน้าเว็บจะโหลดใหม่ทั้งหน้า — เหมือนเรากำลังเปลี่ยนหน้าหนังสือจริง ๆ
+แต่ใน Single Page Application หรือ SPA เมื่อเราคลิกเปลี่ยนหน้า ระบบจะไม่โหลดหน้าเว็บใหม่ทั้งหมด แต่จะโหลดเฉพาะข้อมูลที่เปลี่ยนผ่าน JavaScript
+-->
+
 ---
 layout: two-cols-header
 level: 2
@@ -244,7 +249,7 @@ if (age >= 18) {
 } else {
   message = "Minor";
 }
-
+// condition ? true : false
 // Using ternary operator
 const message = age >= 18 ? "Adult" : "Minor";
 ```
@@ -264,3 +269,8 @@ import divide, { add } from "./utils.js";
 add(2, 3); // 5
 divide(6, 2); // 3
 ```
+
+<!--
+Ternary Operator เป็นวิธีเขียนเงื่อนไขแบบสั้น แทนการใช้ if-else แบบยาว
+มันเหมาะกับกรณีที่เราต้องการเช็คบางอย่าง แล้วแสดงผลลัพธ์แบบสองทาง เช่น ‘ถ้าใช่ ให้แสดง A ถ้าไม่ใช่ ให้แสดง B
+-->

@@ -180,6 +180,14 @@ async function ProductList() {
 export default ProductList;
 ```
 
+<!--
+Incremental Static Regeneration คือการผสมข้อดีของ SSG และ SSR
+
+สร้างหน้าแบบ static ล่วงหน้า และ อัปเดตข้อมูลอัตโนมัติแบบเบื้องหลัง
+
+เรากำหนดเวลา revalidate ได้ เช่น ทุก 60 วินาที
+-->
+
 ---
 
 ## React vs Next.js — Overall
