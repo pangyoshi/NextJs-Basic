@@ -123,7 +123,11 @@ Popular SPAs you might use every day:
 
 Next.js supports both SPAs and traditional multi-page applications, giving you the best of both worlds.
 
-<!-- insert more images Ex. App -->
+<!--
+!------------- BREAK -------------!
+
+insert more images Ex. App
+-->
 
 ---
 
