@@ -65,6 +65,8 @@ function Button({ text = 'Click me', onClick, disabled = false }) {
 ```
 
 ---
+layout: two-cols
+---
 
 ## Adding Interactivity with State
 
@@ -92,6 +94,10 @@ function Counter() {
   );
 }
 ```
+
+::right::
+<img src="/assets/react-click-counter-v2.webp" class="mt-52 w-[80%] mx-auto" />
+
 
 ---
 hide: true

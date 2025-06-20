@@ -2,6 +2,10 @@
 
 JSX (JavaScript XML) is a syntax extension for JavaScript that looks similar to HTML but allows you to write HTML-like code in JavaScript.
 
+<!--
+JavaScript XML เป็นส่วนขยายสำหรับ JavaScript ที่ดูคล้ายกับ HTML ช่วยให้เขียนโค้ด HTML ใน JavaScript ได้
+-->
+
 ---
 
 ## 📝 JSX Basics
@@ -13,6 +17,10 @@ const element = <h1>Hello, world!</h1>;
 ```
 
 This is neither a string nor HTML - it's JSX that gets transformed into JavaScript.
+
+<!--
+นี่ไม่ใช่สตริงหรือ HTML แต่เป็น JSX ที่ถูกแปลงเป็น JavaScript
+-->
 
 ---
 
@@ -48,6 +56,12 @@ JSX:
 JSX uses camelCase for attribute names (following JavaScript conventions).
 
 <img src="/assets/CamelCase.png" class="mt-5 w-[25%] mx-auto" />
+
+---
+
+## 🐫 camel Case
+
+<img src="/assets/exemples-Camel-Case.webp" class="mt-5 mx-auto" />
 
 
 ---

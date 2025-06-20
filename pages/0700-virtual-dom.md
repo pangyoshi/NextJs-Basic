@@ -15,6 +15,12 @@ The Virtual DOM is:
 - An abstraction layer between your code and the actual DOM
 - Much faster to manipulate than the real DOM
 
+<!--
+Virtual DOM คือโครงสร้างจำลองของ DOM ที่เขียนด้วย JavaScript
+มันเปรียบเสมือน “ภาพร่าง” ของหน้าเว็บ ที่ React ใช้เพื่อเปรียบเทียบและอัปเดตเฉพาะส่วนที่เปลี่ยนแปลง
+ทำให้การปรับ UI เร็วและมีประสิทธิภาพกว่าการแก้ไข DOM จริงโดยตรง
+-->
+
 ---
 hide: true
 ---

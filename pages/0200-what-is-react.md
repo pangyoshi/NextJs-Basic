@@ -1,7 +1,22 @@
 # What is React?
 
-React is a JavaScript library for building user interfaces, particularly single-page applications.
+### React is a JavaScript library for building user interfaces, particularly single-page applications.
+
 <img src="/assets/react-js-ani.gif" class="mt-10 w-[75%] mx-auto w-100" />
+
+#### 📝 Note
+👉 React (Library) is a “specialized tool”<br>
+👉 Next.js (Framework) is a more complete structure with clear guidelines and structure.
+
+
+
+<!--
+React เป็น library สำหรับสร้าง UI – เราใช้มันเพื่อสร้างส่วนต่างๆ ของหน้าจอ เช่น ปุ่มหรือฟอร์ม แต่เราต้องเลือกและจัดการเครื่องมืออื่นๆ เอง
+Next.js เป็น framework ที่สร้างบน React – มันให้โครงสร้างที่ครบเครื่องมากกว่า ทั้ง routing, data fetching, SEO และการจัดการเซิร์ฟเวอร์
+Key Message:
+React (Library) คือ “เครื่องมือเฉพาะด้าน”
+Next.js (Framework) คือ “กรอบงานครบชุด” ที่มีแนวทางและโครงสร้างชัดเจน
+-->
 
 ---
 
@@ -32,6 +47,13 @@ function Greeting() {
 
 React Component 👉 Returns JSX (HTML-like) for use in building web page UI.
 
+<!--
+เหมือน “บล็อก” ที่ใช้สร้างหน้าเว็บ เช่น ปุ่ม การ์ด หรือแบบฟอร์ม
+เขียนครั้งเดียว ใช้ซ้ำได้หลายที่ ช่วยให้โค้ดเป็นระเบียบและจัดการง่าย
+
+ตัวอย่าง: ปุ่ม “เพิ่มลงรถเข็น” ที่ใช้ได้ทั้งหน้าแรกและหน้ารายละเอียดสินค้า
+-->
+
 ---
 hideInToc: true
 ---
@@ -45,7 +67,6 @@ function App() {
   return (
     <div>
       <Header />
-      <MainContent />
       <Sidebar />
       <Footer />
     </div>
@@ -54,6 +75,7 @@ function App() {
 ```
 
 React Component 👉 Use 𝗣𝗮𝘀𝗰𝗮𝗹 𝗖𝗮𝘀𝗲 where each word in a variable name starts with a capital letter
+<img src="/assets/naming-Coventions.webp" class="mt-3 mx-auto w-100" />
 <!--
 Pascal case สำหรับ components
 -->
@@ -119,14 +141,17 @@ function Counter() {
   
   return (
     <div>
-      <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>
-        Click me
-      </button>
+        <button onClick={() => setCount(count + 1)}>
+            Click me!
+        </button>
+        <p>Click count: {count}</p>
     </div>
   );
 }
 ```
+
+<img src="/assets/react-click-counter.webp" class="w-[75%] mx-auto w-100" />
+
 
 <!--
 State คือ ข้อมูลภายในของ Component ที่สามารถเปลี่ยนแปลงได้เมื่อมีการโต้ตอบ เช่น คลิกปุ่ม หรือพิมพ์ข้อความ

@@ -197,12 +197,23 @@ Incremental Static Regeneration คือการผสมข้อดีขอ
 | Client-side Only | SSR, SSG, ISR, Client-side |
 | Manual setup (e.g., React Router) | Built-in File-based Routing |
 | No Built-in Solution | Built-in Methods (getServerSideProps, etc.) |
-| Needs Configuration (CRA, Webpack) | Zero Config Out of the Box |
+| Needs Configuration - Create React App (CRA, Webpack) | Zero Config Out of the Box |
 
 <!--
 ไม่มีฟีเจสในตัวสำหรับดึงข้อมูลจากเซิร์ฟเวอร์ต้องใช้ fetch()
 
 มีฟีเจอร์ให้พร้อม เช่น getServerSideProps, getStaticProps, และ API Routes
+ตั้งค่าเองหลายอย่าง เช่น:
+
+การแยกหน้า (routing)
+
+การโหลดข้อมูล (data fetching)
+
+การจัดการ SEO
+
+การ build หรือ optimize performance
+
+- Next.js ออกแบบมาให้ใช้งานได้ทันที แทบไม่ต้องตั้งค่าอะไรเลย
 -->
 
 ---

@@ -139,3 +139,7 @@ React uses a Virtual DOM to minimize direct DOM manipulation:
 4. **Efficient Updates**: finds the differences, and updates only the changed parts
 
 This approach makes React applications faster and more efficient.
+
+<!--
+React ใช้ Virtual DOM เพื่อลดการจัดการ DOM โดยตรง:
+-->
