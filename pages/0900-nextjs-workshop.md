@@ -2,7 +2,7 @@
 
 ### 🧑‍💻 From React to building your first Next.js application
 
-**Duration:** 1 hours 
+**Duration:** 1 hours
 
 **Target Audience:** Absolute beginners with basic knowledge of HTML, CSS, and JavaScript.  
 **Goal:** Build a simple multi-page Next.js application with basic authentication while learning core concepts through hands-on practice.
@@ -180,7 +180,7 @@ In Next.js with App Router:
 
 ---
 
-## Module 2: Project Structure and First Page 
+## Module 2: Project Structure and First Page
 
 ### Creating a page
 
@@ -273,7 +273,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Headers />
+        <Header />
         <div className="flex flex-col h-full min-h-screen">{children}</div>
         <footer className="flex justify-center items-center h-16 bg-gray-800 text-white static bottom-0 w-full">
           <p>© 2025 My Next.js Site</p>
@@ -357,8 +357,8 @@ export default function Header() {
   return (
     <nav>
       <Link href="/">Home</Link> | <Link href="/about">About</Link>
-      <button onClick={() => setCount(count + 1)}>Clicks: {count}</button>
     </nav>
+    <button className="border border-amber-400 cursor-pointer" onClick={() => setCount(count + 1)}>Clicks: {count}</button>
   );
 }
 ```
@@ -534,33 +534,42 @@ import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 
 export default function Profile() {
-  const router = useRouter();
-  useEffect(() => {
-    const token = localStorage.getItem("token");
-    if (!token) {
-      router.push("/login");
-    }
-  }, [token]);
+    const router = useRouter();
+    const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
+    useEffect(() => {
+        if (!token) {
+            router.push("/login");
+        }
+    }, [token]);
 
-  const handleLogout = () => {
-    localStorage.removeItem("token");
-    router.push("/login");
-  };
+    const handleLogout = () => {
+        localStorage.removeItem("token");
+        router.push("/login");
+    };
 
-  return (
-    <>
-      <h1>Hello! This is profile Page</h1>
-      <button
-        type="button"
-        onClick={handleLogout}
-        className="w-20 flex justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm/6 font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 mt-10"
-      >
-        Logout
-      </button>
-    </>
-  );
+    return (
+        <>
+            <div className="mt-52 mx-auto">
+                <h1 className="mt-52">Hello! This is profile Page</h1>
+                <button
+                    type="button"
+                    onClick={handleLogout}
+                    className="mx-auto w-20 flex justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm/6 font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 mt-10"
+                >
+                    Logout
+                </button>
+            </div>
+
+        </>
+    );
 }
 ```
+
+<!--
+"compilerOptions": {
+        "jsx": "preserve",
+    },
+-->
 
 ---
 
@@ -580,8 +589,12 @@ export default function Header() {
   return (
     <nav className="flex justify-start p-4 gap-5 bg-gray-800 text-white">
       <Link href="/">Home</Link> | <Link href="/about">About</Link> |{" "}
-      <Link href="/login">login</Link> | <Link href="/profile">Profile</Link>
-      <button type="button" className="" onClick={() => setCount(count + 1)}>
+      <Link href="/login">login</Link>
+      <button
+        type="button"
+        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-3 rounded disabled:opacity-50"
+        onClick={() => setCount(count + 1)}
+      >
         Click: {count}
       </button>
     </nav>
