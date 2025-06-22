@@ -172,3 +172,13 @@ layout: two-cols-header
 - [React Tutorial](https://react.dev/learn) - Step-by-step guide to learning React
 - [Next.js Learn Course](https://nextjs.org/learn) - Interactive Next.js tutorials
 - [React vs Next.js](https://nextjs.org/learn/react-foundations/what-is-react-and-nextjs) - Detailed comparison
+
+---
+class: text-center
+---
+
+###  🌟 "Help us get better — scan & tell us!" 💬
+
+<img src="/assets/qr_feedback.png" class="mt-5 w-52 mx-auto mb-6" />
+
+###  That’s very kind. 🎉
